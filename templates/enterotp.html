@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login Page</title>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="static/mystyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- <body>
+        <center>
+            <div class="main" >
+             <div class="register" text-center>
+                 <font size="6" color = "black" ><center> <span class="fa fa-sign-in"></span> Login Window </center></font>
+                <br>
+                <form  action="/validate"  method="post" >
+                   {% if message is defined and message %}
+                   <div class="alert alert-warning"> <strong> {{ message }} </strong></div>
+                   {% endif %}
+      
+           <table class="table">
+                                 
+                                 
+                                 <tr>
+                                     <td>Enter otp</td>
+                                     <td><input type="text" name="otp"  class="form-control" placeholder="Enter correct otp" required></td>
+                                      
+                                 </tr>
+                                 
+                                 
+                             </table>
+           <br>
+         <button type="submit" class="btn btn-primary">Verify</button>
+        
+       </form> 
+             </div>
+           </div>
+           </center>
+                 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+               <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+               <script src="js/myjs.js" type="text/javascript"></script>
+              
+        
+           </footer>
+           </body>
+    </body> -->
+    <body>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-lg-5 col-md-7 mx-auto my-auto">
+                    <div class="card">
+                        <div class="card-body px-lg-5 py-lg-5 text-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="rounded-circle avatar-lg img-thumbnail mb-4" alt="profile-image">
+                            <h2 class="text-info">2FA Security</h2>
+                            <p class="mb-4">Enter 6-digits code from your athenticator app.</p>
+                            <center>
+                                <form action="/validate"  method="post">
+                                    <div class="text-center">
+                                        <div class="row mb-4 ">
+                                            <div class="col-lg-2 col-md-2 col-2 ps-0 ps-md-2">
+                                                <input type="text" name = "one" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-2 ps-0 ps-md-2">
+                                                <input type="text" name = "two" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-2 ps-0 ps-md-2">
+                                                <input type="text" name = "three" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-2 pe-0 pe-md-2">
+                                                <input type="text" name = "four" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-2 pe-0 pe-md-2">
+                                                <input type="text" name = "five" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-2 pe-0 pe-md-2">
+                                                <input type="text" name = "six" class="form-control text-lg text-center" placeholder="_" aria-label="2fa">
+                                            </div>
+                                            
+                                        </div>
+                                    <div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn bg-info btn-lg my-4">Verify OTP for Login</button>
+                                    </div>
+                                </form>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div
+    </body>
+</html>

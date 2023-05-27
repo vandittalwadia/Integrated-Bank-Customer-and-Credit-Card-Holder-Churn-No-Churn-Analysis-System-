@@ -1,0 +1,217 @@
+<!-- <html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Registration Form</title>
+
+</head>
+<style>
+	.hi{
+		color: green;
+	}
+	.ok{
+		display: block;
+		margin-left: 80px;
+		margin-top: -15px;
+		border: 1px solid black;
+	}
+	.van{
+		margin-left: 30px;
+		font-weight: bold;
+	}
+	.gf{
+		margin-left: 10px;
+		font-weight: bold;
+	}
+	.btn{
+		margin-top: 20px;
+		width: 80px;
+		height: 25px;
+		background-color: orangered;
+		color: white;
+	}
+	.y{
+		color: gray;
+	}
+</style>
+<body>
+<div class="container">
+	<h2 class="hi" >  User Registration </h2>
+	<h4 class="y" >Note : fill following details !</h4>
+	<form action="{{ url_for('register') }}" method="post">
+		{% if message is defined and message %}
+			<div class="alert alert-warning"> <strong> {{ message }}  </strong></div>
+		{% endif %}
+		<br>
+		<div class="form-group">
+			<label class="van">Name:</label>
+			<input class="ok" type="text" class="form-control" id="name" name="name" placeholder="Enter name" name="name">
+		</div>
+		<div class="form-group">
+			<label class="van">Email:</label>
+			<input class="ok" type="email" class="form-control" id="email" name="email" placeholder="Enter email" name="email">
+		</div>
+		<div class="form-group">
+			<label class="gf">Password:</label>
+		<input class="ok" type="password" class="form-control" id="password" name="password" placeholder="Enter password" name="pswd">
+		</div>
+		<button class="btn" type="submit" class="btn btn-primary">Register</button>
+		<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Login here</a></p>
+	</form>
+</div>	
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>html Page</title>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="static/mystyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--         
+         <style type="text/css">
+            form {font-weight:900;
+             color: yellow;}
+            button{
+             background-color: #04AA6D;
+            border: none;
+            color: white;
+             padding: 16px 32px;
+             text-decoration: none;
+              margin: 4px 2px;
+            
+            }
+            div.register{
+                padding-top: 10vh;
+                background-color: rgba(0,0,0,0.4);
+                width:50%;
+                font-size:18px;
+                border-radius: 10px;
+                box-shadow: 2px 15px 15px rgba(0,0,0,0.3);
+                color: #fff;
+            }
+       </style> -->
+       <style type="text/css">
+        .register{font-weight:900;
+             color: black; width: 60%; margin-top: 20px;}
+        .footer {
+               background-color: #FFF;
+               position:fixed;
+               bottom: 0px;
+               width: 100%;
+               text-align: center;
+            }
+      </style>
+    </head>
+    <body style="background-image: url( '/static/flasksignup.png' );background-size: cover ; background-attachment: fixed;">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> <span class="fa fa-users"></span> Churn Prediction</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('index')}}"><span class="fa fa-bank"></span> Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+<!--      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Java Programming</a>
+          <a class="dropdown-item" href="#">Python Programming</a>
+          <a class="dropdown-item" href="#">C++ Programming</a>
+          <a class="dropdown-item" href="#">R Programming</a>
+          <a class="dropdown-item" href="#">Javascript Programming</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+      <li class="nav-item">
+          <a class="nav-link" href="contactUs.jsp"><span class="fa fa-phone"></span> Contact Me</a>
+      </li>
+    
+      <li class="nav-item">
+          <a class="nav-link" href="{{url_for('login')}}"><span class="fa fa-user-circle-o fa-spin"></span> Already Registered ? </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        <center>
+     <div class="main">
+      <div class="register">
+          <font size="6" color = "black" ><center><span class="fa fa-user"></span> Admin Sign Up Window</center></font>
+         <br>
+         <form  action="{{ url_for('register') }}" method="post">
+          {% if message is defined and message %}
+          <div class="alert alert-warning"> <strong> {{ message }}  </strong></div>
+          {% endif %}
+    
+    <table class="table">
+                          <tr>
+                              <td>Enter Username :</td>
+                              <td><input type="text" name="name" class="form-control"  placeholder="Enter Username" required></td>
+                               
+                          </tr>
+                           
+                          <tr>
+                              <td>Enter Password :</td>
+                              <td><input type="password" name ="password" class="form-control" placeholder="Enter password" id = "txtPassword" ></td>
+                               
+                          </tr>
+                          <span id="message2"></span>
+                         
+                          <span id="message1"></span>
+                          
+                          
+                          <tr>
+                              <td>Enter Email-ID:</td>
+                              <td><input type="email" name="email" class="form-control" placeholder="Enter your email address" required></td>
+                               
+                          </tr>
+                          <tr>
+                              <td>Select Gender :</td>
+                              <td>
+                                <select name="gen" class="form-control">
+                                        
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">other</option>
+                                </select>
+                              </td>
+                               
+                          </tr>
+                         
+                          
+                      </table>
+   
+
+    
+    
+
+    <Button type="submit"  class="btn btn-primary">Submit</Button>
+	<p class="bottom">Already have an account? <a class="bottom stylelink" href="{{url_for('login')}}"> Login here</a></p>
+    </form>
+      </div><!-- id="btnSubmit" -->
+    </div>
+    </center>
+        
+    <footer class="background">
+      <p class="footer">
+          Copyright @2022 Vandit Talwadia All rights are reserved.
+      </p>
+
+     </footer>
+
+</body>
+</html>

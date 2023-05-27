@@ -1,0 +1,121 @@
+<!-- <html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Account</title>
+
+</head>
+<style>
+.g{
+	font-size: 25px;
+	color: red;
+	font-style: italic;
+}
+</style>
+<body>
+<div class="container">
+	<div class="row">
+		<h2>User Profile</h2>
+	</div>
+	<br>
+	<div class="row">
+		Logged in : <strong class="g"> {{session.name}}  </strong>| <a href="{{ url_for('logout') }}"> Logout</a>
+	</div>
+	<br><br>
+	<div class="row">
+		
+		<h2>Welcome to the User profile page... </h2>
+	</div>	
+</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>html Page</title>
+<!--        css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> <span class="fa fa-users"></span> Churn Prediction</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('index')}}"> <span class="fa fa-bank"></span> Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+<!--      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Java Programming</a>
+          <a class="dropdown-item" href="#">Python Programming</a>
+          <a class="dropdown-item" href="#">C++ Programming</a>
+          <a class="dropdown-item" href="#">R Programming</a>
+          <a class="dropdown-item" href="#">Javascript Programming</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+      <li class="nav-item">
+          <a class="nav-link" href="contactUs.jsp"><span class="fa fa-phone"></span> Contact Me</a>
+      </li>
+      
+       
+    </ul>
+      <ul class="navbar-nav mr-right">
+          
+          <li class="nav-item">
+          <a class="nav-link" href="#!"  data-toggle="modal" data-target="#profile-modal"><span class="fa fa-user-plus"></span> <strong>Welcome : {{session.name}}</strong> </a>
+      </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('logout') }}"><span class="fa fa-user-plus"></span> Logout </a>
+      </li>
+      </ul>
+  </div>
+</nav>
+
+        <!-- nav ends -->
+        <div class="container-fluid p-0 m-0" >
+          <div class = "jumbotron secondary-background text-dark" id="spread">
+              <div class="container">
+              <h1>Bank Customer Churn/No Churn Analysis</h1>
+              <h2>Bank Customer Churn Prediction Using Machine Learning</h2>
+              <p>Customer Churn prediction means knowing which customers are likely to leave or unsubscribe from your service. For many companies, this is an important prediction. This is because acquiring new customers often costs more than retaining existing ones.</p>
+              <a href="{{url_for('bankchurn')}}" class ="btn btn-outline-dark btn-lg"><span class="fa fa-external-link"></span> Switch to Bank Customer Churn Prediction Portal</a>
+              
+              
+              </div>
+          </div>
+          
+      </div>
+      <div class="container-fluid p-0 m-0" >
+        <div class = "jumbotron secondary-background text-dark" id="spread">
+            <div class="container">
+            <h1>Customers with Credit Card Services Churn/No Churn</h1>
+            <h2>Machine Learning to Develop Credit Card Customer
+              Churn Prediction</h2>
+            <p>The credit card customer churn rate is the percentage of a bank’s customers that stop using
+              that bank’s services. Hence, developing a prediction model to predict the expected status for the
+              customers will generate an early alert for banks to change the service for that customer or to offer
+              them new services. </p>
+            <a href="{{url_for('creditchurn')}}" class ="btn btn-outline-dark btn-lg"><span class="fa fa-external-link"></span> Switch to Credit Card Customer Churn Prediction Portal</a>
+            
+            
+            </div>
+        </div>
+        
+    </div>
+	</body>
+</html>

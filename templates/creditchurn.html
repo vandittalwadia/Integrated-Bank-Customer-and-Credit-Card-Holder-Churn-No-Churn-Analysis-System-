@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login Page</title>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="static/mystyle.css" rel="stylesheet" type="text/css"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+          table, th, td {
+            border:1px solid black;
+          }
+          select, option {
+               width: 300px;
+               height: 40px;
+          }
+          tr:nth-child(even) {background-color: #f2f2f2;}
+          .reporttable{
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+          </style>
+      </head>
+</html>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        
+       
+        <div><strong>Welcome : {{session.name}}</strong>   <a  href="{{ url_for('logout') }}"><span class="fa fa-sign-out"></span> Logout </a></div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Churn Prediction System</span> </a>
+              <div class="nav_list"> <a href="{{url_for('home')}}" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="{{url_for('bankchurn')}}"class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Bank Customer Churn</span> </a> <a href="{{url_for('creditchurn')}}" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Credit Card Churn</span> </a> <a href="{{url_for('bankviz')}}" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Graphical Status Bank Customers</span> </a> <a href="{{url_for('creditviz')}}" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Graphical Status Credit Card Customers</span> </a>  </div>
+            </div> <a href="{{ url_for('logout') }}" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+        </nav>
+    </div>
+    
+    <div class="height-100 bg-light">
+        <h4>Credit Card Customer Churn Prediction</h4>
+    
+ 
+    
+
+
+   
+       
+    <center>
+        <div class="main" style="margin-top: 25px;">
+         <div class="register">
+             <font size="6" color = "black" ><center><span class="fa fa-bank"></span> Credit Card Customer Churn Prediction</center></font>
+            <br>
+            <form   action="{{ url_for('predictcredit') }}" method="post">
+            
+       
+       <table class="table">
+                             
+                            <tr>
+                              <td>Select Education Level</td>
+                              <td>
+                                <select type="text" name="edu" id="education">
+                                  <option value="school">High School</option>
+                                  <option value="college">College</option>
+                                  <option value="undergraduate"> Graduate</option>
+                                  <option value="postgraduate">Post Graduate</option>
+                                  
+                                  <option value="doctarate">Doctorate</option>
+                                  <option value="uneducated">Uneducated</option>
+                                  <option value="unknown">UnKnown</option>
+                                  
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Select Marital Status</td>
+                              <td>
+                                <select type="text" name="marry" id="married">
+                                 
+                                  <option value="married">Married</option>
+                                  <option value="unmarried">Unmarried</option>
+                                  
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Select Gender</td>
+                              <td>
+                                <select type="text" name="gen" id="gender">
+                                 
+                                  <option value="male">Male</option>
+                                  <option value="female">Female</option>
+                                  <option value="other">Other</option>
+                                  
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Select Card Category</td>
+                              <td>
+                                <select type="text" name="card" id="category">
+                                  <option value="blue">Blue</option>
+                                  <option value="gold">Gold</option>
+                                  <option value="Silver">Silver</option>
+                                  <option value="platinum">Platinum</option>
+                                  
+                                </select>
+                              </td>
+                            </tr>
+                              <tr>
+                                <td> Dependent Count :</td>
+                                <td><input type="number" name="dependentcount" class="form-control"  placeholder="Enter dependent count (0 to 6)" required></td>
+                                
+                            </tr>
+                            <tr>
+                              <td> Total Relationship Count :</td>
+                              <td><input type="number" name="Total_Relationship_Count" class="form-control"  placeholder="Enter Total Relationship Count" required></td>
+                              
+                          </tr>
+                          <tr>
+                            <td>Months_Inactive_12_months :</td>
+                            <td><input type="number" name="Months_Inactive_12_mon" class="form-control"  placeholder="Enter Months_Inactive_12_mon :" required></td>
+                            
+                        </tr>
+                        <tr>
+                          <td>Contacts Count 12 months :</td>
+                          <td><input type="number" name="Contacts_Count_12_mon" class="form-control"  placeholder="Enter Contacts_Count_12_mon :" required></td>
+                          
+                      </tr>
+                             
+                              
+                             <tr>
+                                 <td>Credit Limit :</td>
+                                 <td><input type="number" name ="Credit_Limit" class="form-control" placeholder="Enter credit limit" id = "txtPassword" ></td>
+                                  
+                             </tr>
+                             
+                             <tr>
+                              <td>Total Revolving Bal</td>
+                              <td><input type="number" name="Total_Revolving_Bal" class="form-control" placeholder="Enter Total_Revolving_Bal" required></td>
+                               
+                          </tr>
+                          <tr>
+                           <td> Avgerage Open To Buy</td>
+                           <td><input type="number" name="Avg_Open_To_Buy" class="form-control" placeholder="Enter Avg_Open_To_Buy" required></td>
+                            
+                       </tr>
+                       <tr>
+                         <td>Total Revolving Bal</td>
+                         <td><input type="number" name="Total_Revolving_Bal" class="form-control" placeholder="Enter  Total_Revolving_Bal" required></td>
+                          
+                     </tr>
+                     <tr>
+                       <td> Total Amount Change Quarter 4 - Quarter 1</td>
+                       <td><input type="number" name="Total_Amt_Chng_Q4_Q1" class="form-control" placeholder="Enter Total_Amt_Chng_Q4_Q1" required></td>
+                        
+                   </tr>
+                   <tr>
+                     <td> Total Transaction Amount</td>
+                     <td><input type="number" name="Total_Trans_Amt" class="form-control" placeholder="Enter Total_Trans_Am" required></td>
+                      
+                 </tr>
+                 <tr>
+                   <td> Total Transaction Count</td>
+                   <td><input type="number" name="Total_Trans_Ct" class="form-control" placeholder="Enter Total_Trans_Ct" required></td>
+                    
+               </tr>
+               <tr>
+                 <td> Total Count Change Quater 4-Quarter 1</td>
+                 <td><input type="number" name="Total_Ct_Chng_Q4_Q1" class="form-control" placeholder="Enter Total_Ct_Chng_Q4_Q1" required></td>
+                  
+             </tr>
+               <tr>
+                 <td> Average Utilization Ratio</td>
+                 <td><input type="number" name="Avg_Utilization_Ratio" class="form-control" placeholder="Enter Avg_Utilization_Ratio" required></td>
+                  
+             </tr>
+             <tr>
+               <td>Age</td>
+               <td><input type="number" name="Age" class="form-control" placeholder="Enter Age" required></td>
+                
+           </tr>
+           <tr>
+             <td> Bank Relationship Period</td>
+             <td><input type="number" name="Bank_Relationship_Period" class="form-control" placeholder="Enter Bank_Relationship_Period" required></td>
+              
+         </tr>
+                          
+                            
+                             
+                         </table>
+      
+        
+       
+       
+   
+       <Button class="btn btn-success btn-lg" type="submit" id="btnSubmit1">Predict Status</Button> 
+       <!-- <Button class="stylebutton" type="submit" id="btnSubmit2">Further Visualization..</Button> -->
+       
+       
+       </form>
+         </div><!-- comment -->
+       </div>
+       </center>
+       <center>
+        {% if message is defined and message %}
+        <table style="margin-top: 30px; width: 100%;height: 100%;">
+         <tr>
+           <th>Model</th>
+           <th>Prediction</th>
+         </tr>
+         {%if "not" in message%}
+         <tr>
+           <td style="width: 20px;height: 40px">Random Forest Classifier</td>
+           <td bgcolor="green" style="width: 20px;height: 40px"><div > <strong> {{ message }}  </strong></div></td>
+         </tr>
+ 
+         
+         {%else%}
+         <tr>
+           <td style="width: 20px;height: 40px">Random Forest Classifier</td>
+           <td bgcolor="red" style="width: 20px;height: 40px"><div > <strong> {{ message }}  </strong></div></td>
+         </tr>
+        
+       </table>
+         &nbsp;
+         &nbsp;
+         &nbsp;
+         &nbsp;
+       {%endif%}
+      
+        {% endif %} 
+         &nbsp;
+         &nbsp;
+         &nbsp;
+         &nbsp;
+
+          <!--Creating table using Jinja2-->
+  
+  {% block content %}
+  
+  <table style="width:70%" id="tblCustomers">
+    <caption style="caption-side:top"><h2>Report On Customer With Credit Card Services</h2></caption>
+    <thead>
+      <tr style="background-color: #04AA6D;">
+        <th class="reporttable">Details of Customer with Card sevices</th>
+        <th class="reporttable">Customer Data</th>
+        
+      </tr>
+    </thead>
+    
+    <tbody>
+      {% for headers,item  in myzip %}
+        <tr>
+          <td class="reporttable">{{ headers }}</td>
+          <td class="reporttable">{{ item }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+      &nbsp;
+      &nbsp;
+      <h4>Generate Customer Report !!</h4>
+      
+      <Button class="btn btn-success btn-lg" type="button" id="btnExport" >Download Report</Button> 
+       </center>
+     </div>
+         <script src="static/homescript.js"></script>
+         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+         
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         
+
+          <!--jquery libraries for pdf convert-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+        <script type="text/javascript">
+          $("body").on("click", "#btnExport", function () {
+             alert('Customer Report generated in Pdf format . Please Click Ok to Download.')
+              html2canvas($('#tblCustomers')[0], {
+                  onrendered: function (canvas) {
+                      var data = canvas.toDataURL();
+                      var docDefinition = {
+                          content: [{
+                              image: data,
+                              width: 500,
+                              height:600
+                          }]
+                      };
+                      pdfMake.createPdf(docDefinition).download("creditcard-customer-details.pdf");
+                  }
+              });
+          });
+      </script>
+        
+ </body>
+</html>
