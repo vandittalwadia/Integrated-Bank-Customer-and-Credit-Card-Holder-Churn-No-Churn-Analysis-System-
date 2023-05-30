@@ -28,7 +28,8 @@ app.secret_key = 'projectwork'
 # app.config['MYSQL_USE_TLS'] = True
 # app.config['MYSQL_USE_SSL'] = False
 # mail = Mail(app)
-otp = randint(100000, 999999)
+otp = randint(100000, 999999) #otp generation
+# mysql configuration with flask
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'vandit@123'
