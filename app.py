@@ -113,7 +113,7 @@ Subject: LOGIN OTP
 #     s.quit()
 #     return render_template('enterotp.html')
 
-
+#validating OTP
 @app.route('/validate', methods=['GET','POST'])
 def validate():
     userotp = request.form['one']+request.form['two']+request.form['three']+request.form['four']+request.form['five']+request.form['six']
