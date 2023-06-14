@@ -16,7 +16,7 @@ Data Visualization
 
 MySQL Database
 
-# Tools Used 
+# Tools Used :
 
 Microsoft Visual Studio Code 
 
