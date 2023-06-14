@@ -16,4 +16,16 @@ Data Visualization
 
 MySQL Database
 
+# Tools Used 
+
+Microsoft Visual Studio Code 
+
+Tableau DeskTop
+
+Jupyter Notebook
+
+MySQL WorkBench
+
+Chrome Browser
+
 
