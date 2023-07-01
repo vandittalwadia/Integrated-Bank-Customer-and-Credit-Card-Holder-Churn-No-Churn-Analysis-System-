@@ -49,6 +49,8 @@
 ## Comparative Analysis: Churn vs No-Churn
 ![Screenshot (17)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/e76b3ce8-0f54-4e03-a0a0-56f0f77fd4e4)
 # Customers With Credit Card Services Churn Analysis- Data Visualization Using Tableau Storyboarding
+## Comparing Demographic Variables
+## Comparative Analysis: Churn vs No-Churn
 
 
 
