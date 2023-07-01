@@ -47,6 +47,7 @@
 ![Screenshot (18)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/075af031-f296-463c-bda6-d9d76bd96749)
 
 ## Comparative Analysis: Churn vs No-Churn
+![Screenshot (17)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/e76b3ce8-0f54-4e03-a0a0-56f0f77fd4e4)
 
 
 
