@@ -37,6 +37,9 @@
 ![Screenshot (14)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/c85bf179-9654-448d-9f7d-1c00b6d88468)
 # Credit Card Customer Churn Prediction Portal
 
+![Screenshot (15)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/1eb2324e-26a6-4b9f-bafa-ae8da6f7e87f)
+# Generating Report On Customer With Credit Card Services
+
 
 
 
