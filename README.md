@@ -24,6 +24,7 @@
 # Administrator DashBoard
 
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/cc86aefc-de35-4211-b5aa-e68d84bdea7b)
+# Bank Customer Churn Prediction Portal
 
 
 
