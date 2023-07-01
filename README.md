@@ -64,7 +64,8 @@
 # Jupyter Notebook
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/1f945984-16e0-4b97-8627-9bcf5cfcb697)
 
-
+![Screenshot (21)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/59050a2e-e4cf-43ea-866e-27d093a28a9c)
+![Screenshot (22)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/46c3882b-6d05-42f6-99fa-f2e5fd962087)
 
 
 
