@@ -1,6 +1,6 @@
 # Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System
 
-| Tech Used     | Tools Used    | 
+| *Tech Used*   | *Tools Used*    | 
 | ------------- |:-------------:|
 |   Python 3.0  | Microsoft Visual Studio Code  | 
 |  Flask Framework | Tableau DeskTop     |  
