@@ -21,6 +21,9 @@
 # OTP Verification Page
 ![Screenshot (10)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/aa7dcabd-b72a-433d-882f-db3285821cb0)
 ![Screenshot (11)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/f6027338-78cb-416c-b057-6488165654ad)
+# Administrator DashBoard
+
+![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/cc86aefc-de35-4211-b5aa-e68d84bdea7b)
 
 
 
