@@ -59,6 +59,7 @@
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/16d99e9b-c6f8-46db-af47-e466ce70741b)
 # MySQL Database Management for Admin data and Customer data
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/3ecab604-c02a-4baa-9b78-0d3213ed1b9a)
+![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/505546b0-f268-47fb-baf8-550b16ecef96)
 
 
 
