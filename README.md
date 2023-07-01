@@ -30,7 +30,8 @@
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/6e73c783-b10d-4194-8c80-516a20e1f383)
 # Predict Churn Status After Entering Customer Data
 
-
+![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/a15fd375-fb47-4a48-a0a5-238db37c9463)
+![Screenshot (12)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/6d49c2fb-30ff-4222-9779-04627219168e)
 
 
 
