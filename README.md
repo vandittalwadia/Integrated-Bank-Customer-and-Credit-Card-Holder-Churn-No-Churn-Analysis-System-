@@ -15,6 +15,9 @@
 # Home Page
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/1ce04054-5abc-4799-8c39-e6b7b63c4632)
 # Admin SignUp/Login Portal
+![Screenshot (9)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/1a49ef90-be6c-4ff1-bcfd-585e96fd444b)
+![Screenshot (8)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/8f7d7502-6c4f-47b6-bfa2-46dcca5310dc)
+![Screenshot (7)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/4c13b69c-489a-4633-b64f-c8384151bfe5)
 
 
 
