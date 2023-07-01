@@ -33,7 +33,8 @@
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/a15fd375-fb47-4a48-a0a5-238db37c9463)
 ![Screenshot (12)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/6d49c2fb-30ff-4222-9779-04627219168e)
 # Generating Bank Customer Churn Report.
-
+![Screenshot (13)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/7081ea51-8e75-4f5e-bb72-7835665e2db8)
+![Screenshot (14)](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/c85bf179-9654-448d-9f7d-1c00b6d88468)
 
 
 
