@@ -10,7 +10,8 @@
 |  Machine Learning |
 |  Data Visualization |
 |  MySQL Database |
-
+##Research Paper :
+[Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System](https://irjiet.com/Volume-7/Issue-5-May-2023/An-Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-Using-Machine-Learning/1571)
 # System Modules
 # Home Page
 ![image](https://github.com/vandittalwadia/Integrated-Bank-Customer-and-Credit-Card-Holder-Churn-No-Churn-Analysis-System-/assets/73352918/1ce04054-5abc-4799-8c39-e6b7b63c4632)
